@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Yusfu Daramay</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+
+    <style>
+      /* Make the image fully responsive */
+      .carousel slide {
+        /* width: 300px; */
+      }
+      .carousel-inner {
+
+        width: 100%;
+        /* height: 50%; */
+      }
+      .carousel-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .main {
+        width: 60vw;
+        margin: 0 auto;
+        height: 30vh;
+      }
+      a {
+        color: red;
+        /* background:lightblue; */
+        display: inline;
+        z-index: -1;
+      }
+      .btns {
+        display: flex;
+        list-style-type: none;
+        justify-content:space-between;
+        width: 30vw;
+        margin: 0 auto;
+      }
+      @media only screen and (max-width: 1000px) {
+  .btns {
+    /* background-color: lightblue; */
+    display: flex;
+        list-style-type: none;
+        justify-content:space-between;
+        width: 100%;
+        margin: 0 auto;
+  }
+}
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <ul class="btns">
+
+          <li><a href="index.html" class="button">Back Home</a></li>
+          <li><a href="generic.html" class="button">See "Update" Project</a></li>
+        </ul>
+        <div>
+            <h1>Cool-Mates</h1>
+            <p>Carousel and app features below</p>
+          </div>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/compare.png" alt="Chicago" />
+            </div>
+            <div class="carousel-item">
+              <img src="./images/notifications.png" alt="New York" />
+            </div>
+            <div class="carousel-item ">
+              <img src="./images/landing.png" alt="Los Angeles" />
+            </div>
+
+            <div class="carousel-item">
+              <img src="./images/profile.png" alt="New York" />
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+
+      <section id="content" class="main">
+        <!-- <span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
+        <h2>App Layout and Structure</h2>
+        <p>
+          Users can register their information and choose a profile picture from their computer.The 
+          profile picture is store in an Amazon S3 bucket.
+        </br>
+        </br>
+          After Login in, you can see a display of potential roomates, with there name, picture and profession.
+        </p>
+ 
+        <h2>Features</h2>
+        <p>
+          <strong>Compare:</strong> Evaluate a user's preferences with your own and room situations to see compatibility.
+        </p>
+      <p>
+        <strong>Notifications:</strong> In-App notifications from other users with option of comparing preferences.
+      </p>
+      <p>
+        <strong>Email:</strong> Email a user if you feel compatable with them.
+      </p>
+      <p>
+        <strong>Filter With What You Want:</strong> Easier search results based on what you are looking for.
+      </p>
+      
+      </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
